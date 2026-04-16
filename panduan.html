@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panduan CaptureFlow NW</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --panel: #ffffff;
+      --ink: #152332;
+      --muted: #5f6d7d;
+      --line: #d7e1ea;
+      --primary: #2c6de4;
+      --soft: #eef4ff;
+      --warn: #fff4d8;
+      --warn-ink: #8a5a00;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: "Source Sans 3", Inter, sans-serif; background: linear-gradient(180deg, #eff5fb 0%, #f9fbfd 100%); color: var(--ink); }
+    .page { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 28px 0 60px; }
+    .hero, .section { background: rgba(255,255,255,0.96); border: 1px solid var(--line); border-radius: 28px; padding: 28px; margin-bottom: 22px; }
+    .hero img.logo { width: 220px; max-width: 100%; display: block; margin-bottom: 14px; }
+    h1 { margin: 0 0 10px; font-size: clamp(34px, 5vw, 52px); line-height: 1.05; }
+    h2 { margin: 0 0 12px; font-size: 28px; }
+    h3 { margin: 0 0 10px; font-size: 22px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card { border: 1px solid var(--line); border-radius: 22px; padding: 18px; background: var(--panel); }
+    .note { border-left: 6px solid var(--primary); background: var(--soft); padding: 16px 18px; border-radius: 18px; }
+    .warn { border-left: 6px solid #f5b700; background: var(--warn); color: var(--warn-ink); padding: 16px 18px; border-radius: 18px; }
+    .steps { padding-left: 20px; }
+    figure { margin: 16px 0 0; }
+    img.shot { width: 100%; border-radius: 18px; border: 1px solid var(--line); display: block; }
+    figcaption { margin-top: 8px; color: var(--muted); font-size: 14px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 20px; border-radius: 16px; background: var(--primary); color: white; font-weight: 700; text-decoration: none; }
+    .top-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
+    @media print {
+      body { background: white; }
+      .hero, .section { box-shadow: none; }
+    }
+    @media (max-width: 860px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <img class="logo" src="assets/Logo.png" alt="Logo CaptureFlow NW" />
+      <h1>Panduan singkat CaptureFlow NW</h1>
+      <p class="muted">
+        Panduan ini dibuat untuk pengguna. Tujuannya sederhana: supaya screenshot dan rekaman layar Anda langsung masuk ke folder yang benar tanpa ribet.
+      </p>
+      <div class="top-links">
+        <a class="button" href="index.html">Kembali ke halaman utama</a>
+        <a class="button" href="panduan/CaptureFlow-panduan-pengguna.pdf" target="_blank" rel="noopener">Buka versi PDF</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>CaptureFlow NW membantu apa</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Simpan ke tempat yang tepat</h3>
+          <p class="muted">Anda tidak perlu membuka tree folder penuh setiap kali ingin menyimpan hasil tangkapan.</p>
+        </div>
+        <div class="card">
+          <h3>Lebih cepat saat kerja lapangan</h3>
+          <p class="muted">Pilih target aktif sekali, lalu lanjut tangkap layar atau rekam dari overlay.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Mulai dalam 4 langkah</h2>
+      <ol class="steps">
+        <li>Pilih folder utama tempat semua hasil akan disimpan.</li>
+        <li>Pilih template folder yang ingin dipakai.</li>
+        <li>Pilih target aktif pada layar Proyek.</li>
+        <li>Gunakan overlay untuk Screenshot atau Mulai rekam.</li>
+      </ol>
+      <figure>
+        <img class="shot" src="assets/setup-screen.png" alt="Layar setup" />
+        <figcaption>Setup awal hanya dilakukan sekali. Setelah itu Anda tinggal lanjut ke layar Proyek.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section">
+      <h2>Fitur utama: layar Proyek</h2>
+      <div class="note">
+        Layar ini dipakai untuk melihat folder utama, target aktif, pengaturan nama file, dan tombol cepat seperti ganti target atau aktifkan overlay.
+      </div>
+      <figure>
+        <img class="shot" src="assets/project-screen.png" alt="Layar proyek" />
+        <figcaption>Target aktif terlihat jelas supaya Anda tahu hasil berikutnya akan masuk ke folder mana.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section">
+      <h2>Fitur utama: Riwayat</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Kalau target tadi salah</h3>
+          <p class="muted">Buka Riwayat lalu pindahkan file ke target akhir yang benar.</p>
+        </div>
+        <div class="card">
+          <h3>Kalau nama file perlu dirapikan</h3>
+          <p class="muted">Gunakan aksi Rename agar hasil dokumentasi Anda lebih mudah dicari.</p>
+        </div>
+      </div>
+      <figure>
+        <img class="shot" src="assets/history-screen.png" alt="Layar riwayat" />
+        <figcaption>Riwayat memudahkan buka, bagikan, rename, pindah, atau hapus hasil tangkapan.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section">
+      <h2>Tips pemakaian</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Pakai JPG untuk kerja harian</h3>
+          <p class="muted">Format JPG adalah pilihan default karena ukuran file lebih ringan dan lebih hemat ruang simpan.</p>
+        </div>
+        <div class="card">
+          <h3>Pakai PNG saat butuh detail tajam</h3>
+          <p class="muted">Kalau Anda perlu gambar yang lebih detail, ubah format screenshot ke PNG dari layar Proyek.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Hal yang perlu diperhatikan</h2>
+      <div class="warn">
+        Sebagian aplikasi memang tidak mengizinkan tangkapan layar. Kalau hasil screenshot gagal pada layar tertentu, biasanya itu karena perlindungan dari aplikasi tersebut.
+      </div>
+      <div class="note" style="margin-top: 16px;">
+        Kalau ada versi baru, CaptureFlow NW akan meminta update. Sebaiknya langsung diperbarui supaya overlay, capture, dan penyimpanan tetap stabil.
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Butuh bantuan?</h2>
+      <p class="muted">Kalau Anda menemukan kendala, buka halaman Tentang di app lalu gunakan fitur laporan bug atau hubungi developer melalui email.</p>
+      <figure>
+        <img class="shot" src="assets/about-screen.png" alt="Layar tentang dan laporan bug" />
+        <figcaption>Dari halaman Tentang, Anda bisa langsung kirim laporan bug ke email developer.</figcaption>
+      </figure>
+      <div class="top-links">
+        <a class="button" href="mailto:hadifauzanhanif@gmail.com">Hubungi developer</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

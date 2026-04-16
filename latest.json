@@ -1,0 +1,8 @@
+{
+  "versionCode": 7,
+  "versionName": "1.2.4",
+  "mandatory": true,
+  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.4-release.apk",
+  "portalUrl": "https://hfhafan.github.io/CaptureFlow-NW/",
+  "notes": "CaptureFlow NW 1.2.4 membawa perapihan branding login, sanitasi source private, dan kanal update browser yang siap dipakai untuk rilis berikutnya."
+}

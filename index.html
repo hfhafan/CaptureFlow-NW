@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CaptureFlow NW</title>
+  <style>
+    :root {
+      --bg: #09131b;
+      --panel: rgba(18, 30, 42, 0.88);
+      --panel-strong: #102233;
+      --ink: #f5f7fb;
+      --muted: #b5c3d1;
+      --line: rgba(170, 196, 222, 0.18);
+      --primary: #74a8ff;
+      --primary-strong: #2b6de2;
+      --accent: #ffc947;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(61,151,255,0.28), transparent 28%),
+        radial-gradient(circle at top right, rgba(255,201,71,0.14), transparent 24%),
+        linear-gradient(180deg, #081018 0%, #0b1721 100%);
+    }
+    a { color: inherit; text-decoration: none; }
+    .page { width: min(1160px, calc(100% - 40px)); margin: 0 auto; padding: 28px 0 56px; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 28px;
+      align-items: center;
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(15, 33, 48, 0.96), rgba(10, 22, 32, 0.86));
+      box-shadow: 0 20px 70px rgba(0, 0, 0, 0.28);
+    }
+    .hero img { width: 100%; border-radius: 24px; display: block; }
+    .logo { width: 210px; max-width: 100%; margin-bottom: 18px; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 8px 14px; border-radius: 999px;
+      background: rgba(116,168,255,0.16); color: #c8dbff; font-size: 14px; font-weight: 700;
+    }
+    h1 { margin: 18px 0 14px; font-size: clamp(38px, 5vw, 64px); line-height: 1.02; }
+    .lead { color: var(--muted); font-size: 20px; line-height: 1.65; margin: 0 0 20px; }
+    .button-row { display: flex; flex-wrap: wrap; gap: 14px; margin: 22px 0 10px; }
+    .button {
+      display: inline-flex; align-items: center; justify-content: center;
+      min-height: 54px; padding: 0 22px; border-radius: 18px; font-weight: 700;
+      border: 1px solid transparent;
+    }
+    .button.primary { background: linear-gradient(135deg, var(--primary), var(--primary-strong)); color: white; }
+    .button.secondary { background: rgba(255,255,255,0.04); border-color: var(--line); color: var(--ink); }
+    .version-box {
+      margin-top: 18px; padding: 16px 18px; border: 1px solid var(--line);
+      border-radius: 18px; background: rgba(255,255,255,0.03);
+    }
+    .section { margin-top: 24px; padding: 24px; border: 1px solid var(--line); border-radius: 24px; background: var(--panel); }
+    .section h2 { margin: 0 0 12px; font-size: 28px; }
+    .muted { color: var(--muted); }
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .card { padding: 20px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,0.03); }
+    .card h3 { margin: 0 0 10px; font-size: 20px; }
+    .steps { display: grid; gap: 18px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .step { padding: 18px; border: 1px solid var(--line); border-radius: 20px; background: rgba(8, 17, 25, 0.45); }
+    .step strong { display: inline-block; margin-bottom: 10px; color: var(--accent); }
+    figure { margin: 0; }
+    figure img { width: 100%; border-radius: 20px; border: 1px solid var(--line); }
+    figcaption { margin-top: 10px; color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .cta {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 18px; padding: 24px; border: 1px solid var(--line); border-radius: 24px; background: linear-gradient(135deg, rgba(116,168,255,0.16), rgba(255,201,71,0.08));
+    }
+    .note {
+      padding: 18px; border-radius: 18px; border: 1px solid rgba(255,201,71,0.24);
+      background: rgba(255,201,71,0.08); color: #ffe6a2;
+    }
+    footer { margin-top: 24px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 900px) {
+      .hero, .grid, .steps { grid-template-columns: 1fr; }
+      .page { width: min(100% - 24px, 1160px); }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <img class="logo" src="assets/Logo.png" alt="Logo CaptureFlow NW" />
+        <div class="eyebrow">CaptureFlow NW untuk dokumentasi lapangan yang rapi</div>
+        <h1>Simpan screenshot dan rekaman langsung ke folder yang tepat.</h1>
+        <p class="lead">
+          CaptureFlow NW membantu Anda menaruh hasil tangkapan layar ke target folder akhir tanpa perlu bolak-balik buka tree folder setiap kali bekerja.
+        </p>
+        <div class="button-row">
+          <a id="downloadButton" class="button primary" href="#" target="_blank" rel="noopener">Download APK</a>
+          <a class="button secondary" href="panduan.html">Lihat panduan pakai</a>
+        </div>
+        <div class="version-box">
+          <div><strong>Versi terbaru:</strong> <span id="versionName">Memuat...</span></div>
+          <div class="muted" id="releaseNotes">Sedang mengambil catatan versi terbaru.</div>
+        </div>
+      </div>
+      <figure>
+        <img src="assets/project-screen.png" alt="Tampilan proyek CaptureFlow" />
+      </figure>
+    </section>
+
+    <section class="section">
+      <h2>Cocok dipakai untuk apa</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Dokumentasi lapangan</h3>
+          <p class="muted">Pilih target sekali, lalu setiap screenshot langsung masuk ke folder akhir yang sesuai.</p>
+        </div>
+        <div class="card">
+          <h3>Rekaman proses</h3>
+          <p class="muted">Mulai rekam dari overlay dan simpan hasilnya langsung ke target aktif tanpa pindah folder manual.</p>
+        </div>
+        <div class="card">
+          <h3>Rapikan hasil dengan cepat</h3>
+          <p class="muted">Kalau target tadi salah, file terakhir bisa langsung di-rename atau dipindah dari dalam app.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Cara pakai singkat</h2>
+      <div class="steps">
+        <div class="step">
+          <strong>1. Siapkan proyek</strong>
+          <p class="muted">Pilih folder root, pilih template, lalu buat folder utama agar semua target akhir siap dipakai.</p>
+          <figure>
+            <img src="assets/setup-screen.png" alt="Layar setup CaptureFlow NW" />
+            <figcaption>Setup awal cukup sekali. Setelah itu Anda bisa lanjut kerja dari layar proyek.</figcaption>
+          </figure>
+        </div>
+        <div class="step">
+          <strong>2. Pilih target aktif</strong>
+          <p class="muted">Gunakan layar proyek untuk memilih target akhir yang sedang dikerjakan, misalnya Before, After, atau Issue.</p>
+          <figure>
+            <img src="assets/project-screen.png" alt="Layar proyek CaptureFlow NW" />
+            <figcaption>Target aktif terlihat jelas agar hasil tangkapan tidak salah masuk folder.</figcaption>
+          </figure>
+        </div>
+        <div class="step">
+          <strong>3. Mulai capture dari overlay</strong>
+          <p class="muted">Nyalakan overlay, lalu tap Screenshot atau Mulai rekam. Hasil akan langsung disimpan ke target yang aktif.</p>
+        </div>
+        <div class="step">
+          <strong>4. Rapikan bila perlu</strong>
+          <p class="muted">Buka Riwayat untuk rename, pindah, bagikan, buka file, atau buka folder hasil tangkapan.</p>
+          <figure>
+            <img src="assets/history-screen.png" alt="Layar riwayat CaptureFlow NW" />
+            <figcaption>Riwayat memudahkan Anda membereskan hasil terakhir tanpa membuka struktur folder mentah.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Hal penting yang perlu diperhatikan</h2>
+      <div class="note">
+        Beberapa app memang tidak mengizinkan tangkapan layar. Kalau layar tertentu tidak bisa ditangkap, itu biasanya karena perlindungan dari app tersebut.
+      </div>
+      <div class="card" style="margin-top: 16px;">
+        <h3>Update aplikasi</h3>
+        <p class="muted">Kalau ada versi baru, CaptureFlow NW akan meminta update. Tujuannya supaya alur capture, overlay, dan penyimpanan tetap stabil di berbagai versi Android.</p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div>
+        <h2 style="margin: 0 0 10px;">Siap mulai pakai?</h2>
+        <p class="muted" style="margin: 0;">Download versi terbaru lalu ikuti panduan singkat agar hasil screenshot dan rekaman langsung masuk ke folder yang benar.</p>
+      </div>
+      <div class="button-row" style="margin: 0;">
+        <a id="downloadButtonFooter" class="button primary" href="#" target="_blank" rel="noopener">Download APK</a>
+        <a class="button secondary" href="panduan/CaptureFlow-panduan-pengguna.pdf" target="_blank" rel="noopener">Buka PDF panduan</a>
+      </div>
+    </section>
+
+    <footer>
+      Dibuat oleh Hadi Fauzan Hanif. Dukungan: <a href="mailto:hadifauzanhanif@gmail.com">hadifauzanhanif@gmail.com</a>
+    </footer>
+  </main>
+
+  <script>
+    fetch('latest.json', { cache: 'no-store' })
+      .then((response) => response.json())
+      .then((data) => {
+        const versionName = document.getElementById('versionName');
+        const releaseNotes = document.getElementById('releaseNotes');
+        const downloadButton = document.getElementById('downloadButton');
+        const downloadButtonFooter = document.getElementById('downloadButtonFooter');
+        versionName.textContent = `${data.versionName} (${data.versionCode})`;
+        releaseNotes.textContent = data.notes || 'Versi terbaru CaptureFlow NW siap diunduh.';
+        downloadButton.href = data.apkUrl;
+        downloadButtonFooter.href = data.apkUrl;
+      })
+      .catch(() => {
+        document.getElementById('versionName').textContent = 'Silakan cek kembali beberapa saat lagi';
+        document.getElementById('releaseNotes').textContent = 'Informasi versi belum bisa dimuat saat ini.';
+      });
+  </script>
+</body>
+</html>
