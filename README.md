@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="download/CaptureFlow-NW-v1.2.5-release.apk">
-    <img alt="Download APK" src="https://img.shields.io/badge/Download_APK-CaptureFlow_NW_1.2.5-2b6de4?style=for-the-badge" />
+  <a href="download/CaptureFlow-NW-v1.2.6-release.apk">
+    <img alt="Download APK" src="https://img.shields.io/badge/Download_APK-CaptureFlow_NW_1.2.6-2b6de4?style=for-the-badge" />
   </a>
   <a href="panduan/CaptureFlow-panduan-pengguna.pdf">
     <img alt="Panduan PDF" src="https://img.shields.io/badge/Panduan-PDF-0f766e?style=for-the-badge" />
@@ -53,14 +53,14 @@
 
 ## Download
 
-- APK terbaru: [CaptureFlow-NW-v1.2.5-release.apk](download/CaptureFlow-NW-v1.2.5-release.apk)
+- APK terbaru: [CaptureFlow-NW-v1.2.6-release.apk](download/CaptureFlow-NW-v1.2.6-release.apk)
 - Panduan PDF: [CaptureFlow-panduan-pengguna.pdf](panduan/CaptureFlow-panduan-pengguna.pdf)
 
-## Apa yang baru di 1.2.5
+## Apa yang baru di 1.2.6
 
-- Screenshot Android 15 sekarang lebih stabil dan tidak lagi rawan force close.
-- Pilihan mode screenshot lebih jelas untuk kebutuhan layar penuh atau game.
-- Penanganan area capture dirapikan saat ukuran konten tangkap berubah.
+- Tombol screenshot sekarang langsung membuka dialog sistem, tanpa popup tambahan dari app.
+- Alur screenshot jadi lebih cepat karena pilihan mode cukup sekali di dialog Android.
+- Stabilitas screenshot Android 15 tetap dipertahankan.
 
 ## Kontak
 

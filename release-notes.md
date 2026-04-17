@@ -1,15 +1,15 @@
-# CaptureFlow NW v1.2.5
+# CaptureFlow NW v1.2.6
 
-- Crash screenshot Android 15 yang sempat memicu force close sudah diperbaiki.
-- Mode screenshot sekarang lebih jelas: `Seluruh layar (standar)` dan `1 aplikasi (untuk game)`.
-- Penanganan area capture dirapikan agar lebih stabil saat ukuran konten tangkap berubah.
+- Popup screenshot tambahan dari app dihapus.
+- Tombol screenshot sekarang langsung membuka dialog sistem Android.
+- Alur screenshot jadi lebih cepat karena user hanya memilih mode sekali.
 
 Perubahan utama:
 
-- Race condition callback `ImageReader` yang bisa memicu `Already resumed` sudah ditutup.
-- Jalur MediaProjection diperbarui agar resize hasil tangkap ikut menyesuaikan area konten aktual.
-- Overlay sekarang memberi petunjuk lebih jelas kapan sebaiknya memilih `1 aplikasi`.
+- Overlay langsung meneruskan screenshot ke dialog MediaProjection sistem.
+- Scope screenshot default diubah ke `user choice`, supaya sistem menangani pilihan layar penuh atau 1 aplikasi.
+- Fix stabilitas screenshot Android 15 dari rilis sebelumnya tetap dipertahankan.
 
 Catatan:
 
-- Pada sebagian Android 15 atau ROM tertentu, dialog sistem masih bisa menampilkan pilihan `1 aplikasi` sebagai default. Untuk game, gunakan mode `1 aplikasi`.
+- Untuk game, tetap pilih `1 aplikasi` di dialog sistem jika layar penuh tidak akurat di perangkat tertentu.

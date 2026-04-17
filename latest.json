@@ -1,8 +1,8 @@
 {
-  "versionCode": 8,
-  "versionName": "1.2.5",
+  "versionCode": 9,
+  "versionName": "1.2.6",
   "mandatory": true,
-  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.5-release.apk",
+  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.6-release.apk",
   "portalUrl": "https://hfhafan.github.io/CaptureFlow-NW/",
-  "notes": "CaptureFlow NW 1.2.5 memperbaiki crash screenshot Android 15, memperjelas mode screenshot untuk game, dan merapikan stabilitas area capture."
+  "notes": "CaptureFlow NW 1.2.6 menghapus popup screenshot ganda, jadi pilihan mode cukup sekali di dialog sistem Android dan alurnya lebih cepat."
 }
