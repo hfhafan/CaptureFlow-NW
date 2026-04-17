@@ -1,15 +1,15 @@
-# CaptureFlow NW v1.2.6
+# CaptureFlow NW v1.2.7
 
-- Popup screenshot tambahan dari app dihapus.
-- Tombol screenshot sekarang langsung membuka dialog sistem Android.
-- Alur screenshot jadi lebih cepat karena user hanya memilih mode sekali.
+- Startup app sekarang lebih cepat.
+- Sesi login memakai cache lokal lebih dulu, lalu validasi server jalan di background.
+- Katalog DUID tidak lagi ikut memuat saat app baru dibuka.
 
 Perubahan utama:
 
-- Overlay langsung meneruskan screenshot ke dialog MediaProjection sistem.
-- Scope screenshot default diubah ke `user choice`, supaya sistem menangani pilihan layar penuh atau 1 aplikasi.
-- Fix stabilitas screenshot Android 15 dari rilis sebelumnya tetap dipertahankan.
+- Auth startup tidak lagi menunggu `fetchConfig()` dari server sebelum UI utama tampil.
+- Session cached tetap bisa langsung membuka app, lalu config server disegarkan tanpa menahan layar.
+- Fetch daftar DUID dipindah ke saat tab DUID benar-benar dibuka.
 
 Catatan:
 
-- Untuk game, tetap pilih `1 aplikasi` di dialog sistem jika layar penuh tidak akurat di perangkat tertentu.
+- Jika server login mengganti versi sesi, app tetap akan meminta login ulang setelah refresh background selesai.
