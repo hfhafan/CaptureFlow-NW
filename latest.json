@@ -1,8 +1,8 @@
 {
-  "versionCode": 10,
-  "versionName": "1.2.7",
+  "versionCode": 11,
+  "versionName": "1.2.8",
   "mandatory": true,
-  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.7-release.apk",
+  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.8-release.apk",
   "portalUrl": "https://hfhafan.github.io/CaptureFlow-NW/",
-  "notes": "CaptureFlow NW 1.2.7 mempercepat startup: sesi login dibuka dari cache lokal lebih dulu dan katalog DUID tidak lagi dimuat saat app baru dibuka."
+  "notes": "CaptureFlow NW 1.2.8 memperbaiki clone proyek, buka proyek lokal, dan sinkronisasi cloud agar progresnya lebih jelas dan lebih stabil antar perangkat."
 }

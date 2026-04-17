@@ -1,15 +1,16 @@
-# CaptureFlow NW v1.2.7
+# CaptureFlow NW v1.2.8
 
-- Startup app sekarang lebih cepat.
-- Sesi login memakai cache lokal lebih dulu, lalu validasi server jalan di background.
-- Katalog DUID tidak lagi ikut memuat saat app baru dibuka.
+- Clone proyek dari cloud sekarang lebih stabil dan progresnya lebih jelas.
+- Buka proyek lokal yang sudah ada sekarang kembali normal.
+- Sinkronisasi cloud diperbaiki agar merge lokal dan refresh dari cloud lebih aman.
 
 Perubahan utama:
 
-- Auth startup tidak lagi menunggu `fetchConfig()` dari server sebelum UI utama tampil.
-- Session cached tetap bisa langsung membuka app, lalu config server disegarkan tanpa menahan layar.
-- Fetch daftar DUID dipindah ke saat tab DUID benar-benar dibuka.
+- Parser respons WebDAV diperkeras agar tidak gagal di device tertentu.
+- Metadata proyek duplikat dibersihkan otomatis saat app mulai.
+- Proses clone dan refresh lokal mengurangi traversal folder yang tidak perlu.
+- Status sinkronisasi sekarang menampilkan progres, jadi tidak terasa hang.
 
 Catatan:
 
-- Jika server login mengganti versi sesi, app tetap akan meminta login ulang setelah refresh background selesai.
+- Waktu sinkronisasi tetap bergantung pada jumlah file dan respons server Nextcloud.
