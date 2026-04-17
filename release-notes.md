@@ -1,17 +1,15 @@
-# CaptureFlow NW v1.2.4
+# CaptureFlow NW v1.2.5
 
-- Header login dirapikan agar ikon brand tetap terbaca jelas di layar HP yang sempit.
-- Kanal distribusi customer dipisah dari source repo agar update dibuka lewat browser.
-- Metadata update disiapkan untuk mode wajib update di rilis berikutnya.
-- Secret bootstrap GAS dibersihkan dari source tracked.
+- Crash screenshot Android 15 yang sempat memicu force close sudah diperbaiki.
+- Mode screenshot sekarang lebih jelas: `Seluruh layar (standar)` dan `1 aplikasi (untuk game)`.
+- Penanganan area capture dirapikan agar lebih stabil saat ukuran konten tangkap berubah.
 
 Perubahan utama:
 
-- Modal editor template diatur ulang agar tetap besar, tapi tidak lagi turun ke area navbar.
-- Tombol aksi bawah diaudit ulang langsung dari device ADB dan dipastikan naik aman dari gesture bar.
-- Tab bawah sekarang selalu tampil, termasuk saat belum ada proyek aktif.
-- Script debug diperbaiki agar APK debug bisa langsung diluncurkan lagi setelah install.
+- Race condition callback `ImageReader` yang bisa memicu `Already resumed` sudah ditutup.
+- Jalur MediaProjection diperbarui agar resize hasil tangkap ikut menyesuaikan area konten aktual.
+- Overlay sekarang memberi petunjuk lebih jelas kapan sebaiknya memilih `1 aplikasi`.
 
 Catatan:
 
-- Update ini wajib karena memperbaiki safe zone layout yang berisiko di layar Android tertentu.
+- Pada sebagian Android 15 atau ROM tertentu, dialog sistem masih bisa menampilkan pilihan `1 aplikasi` sebagai default. Untuk game, gunakan mode `1 aplikasi`.

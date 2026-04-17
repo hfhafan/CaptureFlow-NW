@@ -1,8 +1,8 @@
 {
-  "versionCode": 7,
-  "versionName": "1.2.4",
+  "versionCode": 8,
+  "versionName": "1.2.5",
   "mandatory": true,
-  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.4-release.apk",
+  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.5-release.apk",
   "portalUrl": "https://hfhafan.github.io/CaptureFlow-NW/",
-  "notes": "CaptureFlow NW 1.2.4 membawa perapihan branding login, sanitasi source private, dan kanal update browser yang siap dipakai untuk rilis berikutnya."
+  "notes": "CaptureFlow NW 1.2.5 memperbaiki crash screenshot Android 15, memperjelas mode screenshot untuk game, dan merapikan stabilitas area capture."
 }
