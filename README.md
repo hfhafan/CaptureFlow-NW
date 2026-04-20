@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="download/CaptureFlow-NW-v1.2.9-release.apk">
-    <img alt="Download APK" src="https://img.shields.io/badge/Download_APK-CaptureFlow_NW_1.2.9-2b6de4?style=for-the-badge" />
+  <a href="download/CaptureFlow-NW-v1.2.10-release.apk">
+    <img alt="Download APK" src="https://img.shields.io/badge/Download_APK-CaptureFlow_NW_1.2.10-2b6de4?style=for-the-badge" />
   </a>
   <a href="panduan/CaptureFlow-panduan-pengguna.pdf">
     <img alt="Panduan PDF" src="https://img.shields.io/badge/Panduan-PDF-0f766e?style=for-the-badge" />
@@ -53,14 +53,14 @@
 
 ## Download
 
-- APK terbaru: [CaptureFlow-NW-v1.2.9-release.apk](download/CaptureFlow-NW-v1.2.9-release.apk)
+- APK terbaru: [CaptureFlow-NW-v1.2.10-release.apk](download/CaptureFlow-NW-v1.2.10-release.apk)
 - Panduan PDF: [CaptureFlow-panduan-pengguna.pdf](panduan/CaptureFlow-panduan-pengguna.pdf)
 
-## Apa yang baru di 1.2.9
+## Apa yang baru di 1.2.10
 
-- Screenshot dari overlay tidak lagi membawa CaptureFlow ke foreground.
-- Android 14+ memakai dialog sistem untuk pilihan seluruh layar atau 1 aplikasi.
-- Capture dibuat lebih stabil dan resource lebih aman dilepas.
+- Tombol hapus riwayat capture sekarang benar-benar menghapus file lokal.
+- Penghapusan capture ikut tersinkron ke Nextcloud.
+- Delete cloud dibuat aman untuk penggunaan multi-device.
 
 ## Kontak
 

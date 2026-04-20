@@ -1,8 +1,8 @@
 {
-  "versionCode": 12,
-  "versionName": "1.2.9",
+  "versionCode": 13,
+  "versionName": "1.2.10",
   "mandatory": true,
-  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.9-release.apk",
+  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.10-release.apk",
   "portalUrl": "https://hfhafan.github.io/CaptureFlow-NW/",
-  "notes": "CaptureFlow NW 1.2.9 memperbaiki alur izin screenshot agar tidak membawa app ke foreground, memakai dialog sistem Android untuk pilihan seluruh layar atau 1 aplikasi, dan menambah perbaikan stabilitas capture."
+  "notes": "CaptureFlow NW 1.2.10 memperbaiki tombol hapus riwayat capture agar file lokal benar-benar terhapus dan penghapusan file ikut disinkronkan ke Nextcloud secara aman."
 }

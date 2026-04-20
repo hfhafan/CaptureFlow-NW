@@ -1,16 +1,16 @@
-# CaptureFlow NW v1.2.9
+# CaptureFlow NW v1.2.10
 
-- Screenshot dari overlay tidak lagi membawa CaptureFlow ke foreground sebelum consent sistem.
-- Android 14+ memakai dialog sistem MediaProjection untuk pilihan seluruh layar atau 1 aplikasi.
-- Stabilitas capture diperbaiki untuk mengurangi race condition dan leak resource.
+- Tombol hapus riwayat capture sekarang benar-benar menghapus file lokal.
+- Penghapusan capture sekarang ikut disinkronkan ke Nextcloud sebagai delete file spesifik.
+- Hapus cloud dibuat aman untuk multi-device tanpa prune seluruh folder remote.
 
 Perubahan utama:
 
-- `CaptureConsentActivity` dibuat lebih transparan, tanpa animasi, dan tidak muncul di recent apps.
-- Dialog mode screenshot buatan app tidak dipakai agar user tidak melihat popup dua kali.
-- Resize callback MediaProjection dibuat lebih aman dari resume ganda.
-- Bitmap dan ToneGenerator dirilis lebih defensif setelah screenshot.
+- SAF delete sekarang fallback saat provider mengembalikan `false`.
+- Metadata capture hanya dihapus setelah proses delete lokal tidak gagal.
+- Sync queue mendapat tipe task khusus untuk delete file remote.
+- Planner Nextcloud menormalisasi path file delete agar target remote tepat.
 
 Catatan:
 
-- Di Android < 14, pilihan 1 aplikasi belum tersedia dari API resmi Android, jadi capture tetap seluruh layar.
+- Jika provider storage menolak operasi delete, app akan menampilkan error izin/folder yang lebih jelas.
