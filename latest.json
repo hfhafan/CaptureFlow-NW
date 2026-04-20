@@ -1,8 +1,8 @@
 {
-  "versionCode": 13,
-  "versionName": "1.2.10",
+  "versionCode": 14,
+  "versionName": "1.2.11",
   "mandatory": true,
-  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.10-release.apk",
+  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.11-release.apk",
   "portalUrl": "https://hfhafan.github.io/CaptureFlow-NW/",
-  "notes": "CaptureFlow NW 1.2.10 memperbaiki tombol hapus riwayat capture agar file lokal benar-benar terhapus dan penghapusan file ikut disinkronkan ke Nextcloud secara aman."
+  "notes": "CaptureFlow NW 1.2.11 membawa redesign UI: overlay lebih ringkas, ikon lebih konsisten, riwayat punya pencarian dan pengelompokan, serta polish layar login dan tentang."
 }

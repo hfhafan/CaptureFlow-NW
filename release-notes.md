@@ -1,16 +1,16 @@
-# CaptureFlow NW v1.2.10
+# CaptureFlow NW v1.2.11
 
-- Tombol hapus riwayat capture sekarang benar-benar menghapus file lokal.
-- Penghapusan capture sekarang ikut disinkronkan ke Nextcloud sebagai delete file spesifik.
-- Hapus cloud dibuat aman untuk multi-device tanpa prune seluruh folder remote.
+- Overlay dibuat lebih ringkas dan profesional untuk penggunaan harian.
+- Riwayat capture sekarang punya pencarian dan pengelompokan per tanggal.
+- Navigasi, Login, dan Tentang mendapat polish visual agar lebih konsisten.
 
 Perubahan utama:
 
-- SAF delete sekarang fallback saat provider mengembalikan `false`.
-- Metadata capture hanya dihapus setelah proses delete lokal tidak gagal.
-- Sync queue mendapat tipe task khusus untuk delete file remote.
-- Planner Nextcloud menormalisasi path file delete agar target remote tepat.
+- Design token warna dan dimensi mulai disatukan untuk Compose dan overlay XML.
+- Overlay memakai ikon custom, overflow menu, animasi expand/collapse, dan haptic yang mengikuti setting sistem.
+- Bottom navigation memakai ikon selected/outlined agar status tab lebih jelas.
+- Layar Tentang memakai header logo dan card yang lebih rapi.
 
 Catatan:
 
-- Jika provider storage menolak operasi delete, app akan menampilkan error izin/folder yang lebih jelas.
+- Redesign ini dirilis agar customer bisa review langsung di device masing-masing.

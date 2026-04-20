@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="download/CaptureFlow-NW-v1.2.10-release.apk">
-    <img alt="Download APK" src="https://img.shields.io/badge/Download_APK-CaptureFlow_NW_1.2.10-2b6de4?style=for-the-badge" />
+  <a href="download/CaptureFlow-NW-v1.2.11-release.apk">
+    <img alt="Download APK" src="https://img.shields.io/badge/Download_APK-CaptureFlow_NW_1.2.11-2b6de4?style=for-the-badge" />
   </a>
   <a href="panduan/CaptureFlow-panduan-pengguna.pdf">
     <img alt="Panduan PDF" src="https://img.shields.io/badge/Panduan-PDF-0f766e?style=for-the-badge" />
@@ -53,14 +53,14 @@
 
 ## Download
 
-- APK terbaru: [CaptureFlow-NW-v1.2.10-release.apk](download/CaptureFlow-NW-v1.2.10-release.apk)
+- APK terbaru: [CaptureFlow-NW-v1.2.11-release.apk](download/CaptureFlow-NW-v1.2.11-release.apk)
 - Panduan PDF: [CaptureFlow-panduan-pengguna.pdf](panduan/CaptureFlow-panduan-pengguna.pdf)
 
-## Apa yang baru di 1.2.10
+## Apa yang baru di 1.2.11
 
-- Tombol hapus riwayat capture sekarang benar-benar menghapus file lokal.
-- Penghapusan capture ikut tersinkron ke Nextcloud.
-- Delete cloud dibuat aman untuk penggunaan multi-device.
+- Overlay lebih ringkas dengan ikon dan animasi baru.
+- Riwayat capture punya pencarian dan pengelompokan per tanggal.
+- Login, navigasi, dan layar Tentang dipoles agar lebih konsisten.
 
 ## Kontak
 
