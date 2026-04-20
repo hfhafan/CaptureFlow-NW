@@ -1,16 +1,16 @@
-# CaptureFlow NW v1.2.8
+# CaptureFlow NW v1.2.9
 
-- Clone proyek dari cloud sekarang lebih stabil dan progresnya lebih jelas.
-- Buka proyek lokal yang sudah ada sekarang kembali normal.
-- Sinkronisasi cloud diperbaiki agar merge lokal dan refresh dari cloud lebih aman.
+- Screenshot dari overlay tidak lagi membawa CaptureFlow ke foreground sebelum consent sistem.
+- Android 14+ memakai dialog sistem MediaProjection untuk pilihan seluruh layar atau 1 aplikasi.
+- Stabilitas capture diperbaiki untuk mengurangi race condition dan leak resource.
 
 Perubahan utama:
 
-- Parser respons WebDAV diperkeras agar tidak gagal di device tertentu.
-- Metadata proyek duplikat dibersihkan otomatis saat app mulai.
-- Proses clone dan refresh lokal mengurangi traversal folder yang tidak perlu.
-- Status sinkronisasi sekarang menampilkan progres, jadi tidak terasa hang.
+- `CaptureConsentActivity` dibuat lebih transparan, tanpa animasi, dan tidak muncul di recent apps.
+- Dialog mode screenshot buatan app tidak dipakai agar user tidak melihat popup dua kali.
+- Resize callback MediaProjection dibuat lebih aman dari resume ganda.
+- Bitmap dan ToneGenerator dirilis lebih defensif setelah screenshot.
 
 Catatan:
 
-- Waktu sinkronisasi tetap bergantung pada jumlah file dan respons server Nextcloud.
+- Di Android < 14, pilihan 1 aplikasi belum tersedia dari API resmi Android, jadi capture tetap seluruh layar.

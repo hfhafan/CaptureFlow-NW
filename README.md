@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="download/CaptureFlow-NW-v1.2.8-release.apk">
-    <img alt="Download APK" src="https://img.shields.io/badge/Download_APK-CaptureFlow_NW_1.2.8-2b6de4?style=for-the-badge" />
+  <a href="download/CaptureFlow-NW-v1.2.9-release.apk">
+    <img alt="Download APK" src="https://img.shields.io/badge/Download_APK-CaptureFlow_NW_1.2.9-2b6de4?style=for-the-badge" />
   </a>
   <a href="panduan/CaptureFlow-panduan-pengguna.pdf">
     <img alt="Panduan PDF" src="https://img.shields.io/badge/Panduan-PDF-0f766e?style=for-the-badge" />
@@ -53,14 +53,14 @@
 
 ## Download
 
-- APK terbaru: [CaptureFlow-NW-v1.2.8-release.apk](download/CaptureFlow-NW-v1.2.8-release.apk)
+- APK terbaru: [CaptureFlow-NW-v1.2.9-release.apk](download/CaptureFlow-NW-v1.2.9-release.apk)
 - Panduan PDF: [CaptureFlow-panduan-pengguna.pdf](panduan/CaptureFlow-panduan-pengguna.pdf)
 
-## Apa yang baru di 1.2.8
+## Apa yang baru di 1.2.9
 
-- Clone proyek dari cloud sekarang lebih stabil dan progresnya lebih jelas.
-- Buka proyek lokal yang sudah ada kembali normal.
-- Sinkronisasi cloud diperbaiki supaya merge lokal dan refresh cloud lebih aman.
+- Screenshot dari overlay tidak lagi membawa CaptureFlow ke foreground.
+- Android 14+ memakai dialog sistem untuk pilihan seluruh layar atau 1 aplikasi.
+- Capture dibuat lebih stabil dan resource lebih aman dilepas.
 
 ## Kontak
 

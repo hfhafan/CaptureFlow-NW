@@ -1,8 +1,8 @@
 {
-  "versionCode": 11,
-  "versionName": "1.2.8",
+  "versionCode": 12,
+  "versionName": "1.2.9",
   "mandatory": true,
-  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.8-release.apk",
+  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.9-release.apk",
   "portalUrl": "https://hfhafan.github.io/CaptureFlow-NW/",
-  "notes": "CaptureFlow NW 1.2.8 memperbaiki clone proyek, buka proyek lokal, dan sinkronisasi cloud agar progresnya lebih jelas dan lebih stabil antar perangkat."
+  "notes": "CaptureFlow NW 1.2.9 memperbaiki alur izin screenshot agar tidak membawa app ke foreground, memakai dialog sistem Android untuk pilihan seluruh layar atau 1 aplikasi, dan menambah perbaikan stabilitas capture."
 }
