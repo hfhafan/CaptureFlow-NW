@@ -1,15 +1,16 @@
-# CaptureFlow NW v1.2.13
+# CaptureFlow NW v1.2.14
 
-- Auto-sync background dipastikan tetap aktif setelah Paksa Sinkron Sekarang selesai.
-- Jika masih ada task sync yang pending setelah worker background dibatalkan sementara, app akan menjadwalkan ulang auto-sync.
-- Paksa Sinkron Sekarang tetap berjalan langsung dan cepat dengan transfer paralel terbatas.
+- Screenshot dibuat lebih responsif setelah izin sistem diberikan.
+- Delay internal khusus screenshot dikurangi tanpa mengubah flow resmi MediaProjection.
+- File target SAF dibuat setelah bitmap tercapture, jadi momen capture tidak menunggu operasi storage.
 
 Perubahan utama:
 
-- WorkManager background sync tetap memakai constraint network dan baterai.
-- Force sync tidak menghapus atau mematikan antrean background untuk task lain.
-- Query pending sync ditambahkan agar app bisa restore jadwal background sync dengan aman.
+- Delay setelah consent screenshot diturunkan dari 650 ms ke 180 ms.
+- Delay settle screenshot di foreground service diturunkan dari 650 ms ke 160 ms.
+- Wait resize MediaProjection Android 14+ diturunkan dari 450 ms ke 180 ms.
+- Log timing debug ditambahkan untuk melihat durasi setiap tahap screenshot.
 
 Catatan:
 
-- Auto-sync background tetap hemat baterai; mode cepat hanya dipakai saat pengguna menekan Paksa Sinkron Sekarang.
+- Screenshot tetap tidak bisa secepat engine bawaan OS karena app biasa wajib memakai MediaProjection dan izin sistem.

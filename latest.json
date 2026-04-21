@@ -1,8 +1,8 @@
 {
-  "versionCode": 16,
-  "versionName": "1.2.13",
+  "versionCode": 17,
+  "versionName": "1.2.14",
   "mandatory": true,
-  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.13-release.apk",
+  "apkUrl": "https://hfhafan.github.io/CaptureFlow-NW/download/CaptureFlow-NW-v1.2.14-release.apk",
   "portalUrl": "https://hfhafan.github.io/CaptureFlow-NW/",
-  "notes": "CaptureFlow NW 1.2.13 memastikan auto-sync background tetap aktif setelah Paksa Sinkron Sekarang, sambil mempertahankan force sync cepat."
+  "notes": "CaptureFlow NW 1.2.14 mempercepat momen screenshot setelah izin sistem dengan mengurangi delay internal dan menunda pembuatan file SAF sampai bitmap sudah tercapture."
 }
