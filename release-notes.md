@@ -1,15 +1,15 @@
-# CaptureFlow NW v1.2.12
+# CaptureFlow NW v1.2.13
 
-- Tombol sync proyek sekarang bernama Paksa Sinkron Sekarang.
-- Paksa sinkron tidak lagi masuk antrean background, tetapi langsung berjalan saat tombol ditekan.
-- Proses paksa sinkron membatalkan worker background yang sedang dijadwalkan, lalu upload dan hapus file cloud dengan transfer paralel terbatas.
+- Auto-sync background dipastikan tetap aktif setelah Paksa Sinkron Sekarang selesai.
+- Jika masih ada task sync yang pending setelah worker background dibatalkan sementara, app akan menjadwalkan ulang auto-sync.
+- Paksa Sinkron Sekarang tetap berjalan langsung dan cepat dengan transfer paralel terbatas.
 
 Perubahan utama:
 
-- Auto-sync background tetap hemat baterai dan memakai constraint baterai seperti sebelumnya.
-- Paksa sinkron memakai mode performa tinggi karena dijalankan manual oleh pengguna.
-- Sinkronisasi WebDAV diberi guard agar force sync dan auto-sync tidak berjalan bersamaan.
+- WorkManager background sync tetap memakai constraint network dan baterai.
+- Force sync tidak menghapus atau mematikan antrean background untuk task lain.
+- Query pending sync ditambahkan agar app bisa restore jadwal background sync dengan aman.
 
 Catatan:
 
-- Jika koneksi cloud lambat, durasi sinkron masih bergantung pada jaringan, ukuran file, dan respons Nextcloud.
+- Auto-sync background tetap hemat baterai; mode cepat hanya dipakai saat pengguna menekan Paksa Sinkron Sekarang.

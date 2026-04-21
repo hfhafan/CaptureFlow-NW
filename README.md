@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="download/CaptureFlow-NW-v1.2.12-release.apk">
-    <img alt="Download APK" src="https://img.shields.io/badge/Download_APK-CaptureFlow_NW_1.2.12-2b6de4?style=for-the-badge" />
+  <a href="download/CaptureFlow-NW-v1.2.13-release.apk">
+    <img alt="Download APK" src="https://img.shields.io/badge/Download_APK-CaptureFlow_NW_1.2.13-2b6de4?style=for-the-badge" />
   </a>
   <a href="panduan/CaptureFlow-panduan-pengguna.pdf">
     <img alt="Panduan PDF" src="https://img.shields.io/badge/Panduan-PDF-0f766e?style=for-the-badge" />
@@ -53,14 +53,14 @@
 
 ## Download
 
-- APK terbaru: [CaptureFlow-NW-v1.2.12-release.apk](download/CaptureFlow-NW-v1.2.12-release.apk)
+- APK terbaru: [CaptureFlow-NW-v1.2.13-release.apk](download/CaptureFlow-NW-v1.2.13-release.apk)
 - Panduan PDF: [CaptureFlow-panduan-pengguna.pdf](panduan/CaptureFlow-panduan-pengguna.pdf)
 
-## Apa yang baru di 1.2.12
+## Apa yang baru di 1.2.13
 
-- Tombol sync proyek diganti menjadi Paksa Sinkron Sekarang.
-- Paksa sinkron berjalan langsung tanpa antrean background.
-- Upload dan pembersihan file saat paksa sinkron memakai transfer paralel agar lebih cepat.
+- Auto-sync background tetap dijadwalkan ulang setelah Paksa Sinkron Sekarang.
+- Task sync lain yang masih pending tidak hilang walau force sync membatalkan worker sementara.
+- Paksa sinkron tetap berjalan cepat dengan transfer paralel terbatas.
 
 ## Kontak
 
